@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Header.css';
-import Background from './img/bg-masthead.jpg';
+import Background from '../img/bg-masthead.jpg';
 
 const myStyles = {
     backgroundImage: `url(${Background})`,
