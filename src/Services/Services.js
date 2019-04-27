@@ -8,10 +8,16 @@ class Services extends Component {
                 <h3>Services</h3>
                 <h2>What we Offer</h2>
                 <div className="row">
-                    <Icons icon={iconObj[0].icon} title={iconObj[0].title} description={iconObj[0].description}/>
-                    <Icons icon={iconObj[1].icon} title={iconObj[1].title} description={iconObj[1].description}/>
-                    <Icons icon={iconObj[2].icon} title={iconObj[2].title} description={iconObj[2].description}/>
-                    <Icons icon={iconObj[3].icon} title={iconObj[3].title} description={iconObj[3].description}/>
+                    {
+                        iconObj.map((obj, i) => {
+                            return (
+                                <div key={i}>
+                                    {
+                                        <Icons key={i} icon={obj.icon} title={obj.title} description={obj.description} />
+                                    }
+                                </div>)
+                        })
+                    }
                 </div>
             </div>
         );

@@ -1,0 +1,19 @@
+.container {
+    height: 467px;
+    width: 700px;
+}
+
+.container--img {
+    height: 467px;
+    width: 700px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.container:hover > .container--img {
+    height: 267px;
+    width: 500px;
+    transform: rotate(360deg);
+}

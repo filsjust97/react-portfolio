@@ -5,6 +5,7 @@ import './index.css';
 import Navigation from './Navigation/Navigation';
 import Header from './Header/Header';
 import Services from './Services/Services';
+import Projects from './Projects/Projects';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -15,6 +16,7 @@ class App extends React.Component {
                 <Navigation logoTitle="Filipe's Portfolio" />
                 <Header title="Stylish Portfolio" button="Find Out More"/>
                 <Services />
+                <Projects/>
             </div>
         );
     }
